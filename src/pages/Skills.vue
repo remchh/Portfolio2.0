@@ -23,10 +23,16 @@
             </q-card-section>
 
             <q-card-section class="col flex justify-end">
-            <q-img
+           <!-- <q-img
+                :src="'~assets/' + skill.pic"
                 width="150px"
                 class="rounded-borders"
-                :src=" skill.pic "
+                
+            /> -->
+            <q-img
+                :src="skill.url"
+                width="150px"
+                class="rounded-borders"
             />
             </q-card-section>
         </q-card-section>
@@ -49,9 +55,9 @@ import { ref } from 'vue'
 export default {
   setup () {
     const skills = ref([
-      {id: 0, title: 'HTML/CSS', lorem: 'lorem lorem', pic: 'https://cdn.quasar.dev/img/parallax2.jpg'},
-      {id: 1, title: 'Vue JS', lorem: 'lorem lorem', pic: 'https://cdn.quasar.dev/img/parallax2.jpg'},
-      {id: 2, title: 'Firebase', lorem: 'lorem lorem', pic: 'https://cdn.quasar.dev/img/parallax2.jpg'}
+      {id: 0, title: 'HTML/CSS', lorem: 'lorem lorem', pic: 'html-css.jpeg', url: 'http://www.augermiquel.com/wp-content/uploads/2019/10/html-css.png'},
+      {id: 1, title: 'Vue JS', lorem: 'lorem lorem', pic: 'vuejs.png', url: 'https://assets.codepen.io/t-1003/internal/avatars/teams/default.png'},
+      {id: 2, title: 'Firebase', lorem: 'lorem lorem', pic: 'firebase.jpg', url: 'https://www.shareicon.net/data/256x256/2016/07/08/117548_google_512x512.png'}
     ])
     /*const text = ref('lorem')
     const tittle = ref('HTML/CSS')

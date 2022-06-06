@@ -9,6 +9,7 @@
     >
       <q-card class="my-card" flat bordered>
         <q-img
+            loading
             :src="project.pic"
         />
 
@@ -20,7 +21,12 @@
         </q-card-section>
 
         <q-card-actions>
-            <q-btn flat color="primary" label="CHECK OUT" />
+            <q-btn 
+            flat color="primary" 
+            label="CHECK OUT"
+            :href="project.href"
+            target="_blank"
+             />
 
             <q-space />
 
@@ -54,13 +60,14 @@ export default {
   setup () {
     const projects = ref([
       {id: 0, title: 'Quality Fountain Service', 
-      lorem: 'lorem lorem', lorem1: 'lorem lorem', 
-      pic:'https://cdn.quasar.dev/img/parallax2.jpg', expanded: false},
-      {id: 1, title: 'Quality Fountain Service', 
-      lorem: 'lorem lorem', lorem1: 'lorem lorem', 
+      lorem: 'My first real project',
+      lorem1: 'I made this website using a framework call Vuetify, then implemented a form backend from a third-party that works just fine, and lastly deployed it trough netlify', 
+      pic:'https://i.ibb.co/dM0Tp8G/qualityfountain.jpg', expanded: false, href: 'https://quality-fountain-service.netlify.app'},
+      {id: 1, title: 'New Project', 
+      lorem: 'coming soon', lorem1: 'An incredible project coming soon', 
       pic: 'https://cdn.quasar.dev/img/parallax2.jpg', expanded: false},
-      {id: 2, title: 'Quality Fountain Service', 
-      lorem: 'lorem lorem', lorem1: 'lorem lorem', 
+      {id: 2, title: 'New Project', 
+      lorem: 'coming soon', lorem1: 'An increduble project coming soon', 
       pic:'https://cdn.quasar.dev/img/parallax2.jpg', expanded: false}
     ])
     return {
