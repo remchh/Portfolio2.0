@@ -23,7 +23,7 @@
             <div class="text-h6 text-weight-light">
               {{weatherData.name}}
             </div>
-            <div class="text-h6 text-weight-light">
+            <div class="text-h6 text-weight-light ">
               {{weatherData.weather[0].main}}
             </div>
           </div>
@@ -118,49 +118,6 @@
             </q-item>
 
 
-
-           <!-- <q-item
-              clickable
-              v-ripple
-            >
-              <q-item-section avatar>
-                <q-icon name="drafts" />
-              </q-item-section>
-
-              <q-item-section>
-                Contact me
-              </q-item-section>
-            </q-item> -->
-
-
-
-           <!-- <q-item
-              clickable
-              v-ripple
-            >
-              <q-item-section avatar>
-                <q-icon name="telegram" />
-              </q-item-section>
-            </q-item>
-
-            <q-item
-              clickable
-              v-ripple
-            >
-              <q-item-section avatar>
-                <q-icon name="github" />
-              </q-item-section>
-            </q-item>
-
-            <q-item
-              clickable
-              v-ripple
-            >
-              <q-item-section avatar>
-                <q-icon name="email" />
-              </q-item-section>
-            </q-item> -->
-
           </q-list>
 
             <q-separator inset />
@@ -209,6 +166,8 @@
             </q-list>
  
             <q-separator inset />
+
+            <!-- <q-btn color="amber" text-color="black" dense round icon="fa-brands fa-linkedin-in" /> -->
 
         </q-scroll-area>
 
