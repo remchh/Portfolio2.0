@@ -32,6 +32,8 @@
               /> -->
               <q-img
                   :src="skill.url"
+                  width="200px"
+                  height="200px"
                   fit
                   class="rounded-borders"
               />
@@ -41,7 +43,11 @@
           <q-separator />
 
           <q-card-actions>
-              <q-btn flat color="primary">
+              <q-btn 
+              :href="skill.href"
+              target="_blank"
+              flat 
+              color="primary">
               See more
               </q-btn>
           </q-card-actions>
@@ -59,18 +65,27 @@ export default {
     const skills = ref([
       {id: 0, title: 'HTML/CSS', 
       lorem: 'I got my first web certification from freecodecamp, learning html, css grid and flexbox, responsive web design.', 
-      pic: 'html-css.jpeg', 
-      url: 'http://www.augermiquel.com/wp-content/uploads/2019/10/html-css.png'},
+      url: 'http://www.augermiquel.com/wp-content/uploads/2019/10/html-css.png',
+      href: 'https://freecodecamp.com'
+      },
 
       {id: 1, title: 'Vue JS', 
-      lorem: 'After learning the basics of javascript, I chose Vuejs framework as the way to go, just because I find it easy to learn and implement, I took some courses from vuemastery and vueschool to learn from basic to intermidiate level skills such as components, vue-router, composition api, and pinia as a state managment.', 
-      pic: 'vuejs.png', 
-      url: 'https://cdn.iconscout.com/icon/free/png-256/vue-282497.png'},
+      lorem: 'After learning the basics of javascript, I chose Vuejs framework as the way to go, I took some courses from vuemastery and vueschool to learn from basic to intermidiate level skills such as components, vue-router, composition api and pinia.', 
+      url: 'https://cdn.iconscout.com/icon/free/png-256/vue-282497.png',
+      href: 'https://vuejs.org'
+      },
 
       {id: 2, title: 'Firebase', 
       lorem: 'One of the last technologies I have learn or at least learned the basics to implement as a backend for quick and scalable projects.', 
-      pic: 'firebase.jpg', 
-      url: 'https://www.shareicon.net/data/256x256/2016/07/08/117548_google_512x512.png'}
+      url: 'https://www.shareicon.net/data/256x256/2016/07/08/117548_google_512x512.png',
+      href: 'https://www.firebase.com'
+      },
+
+      {id: 3, title: 'Quasar', 
+      lorem: 'I found quasar the easiest way not just to develop web applications but also multi platform web applications using basically the same code, which is incredible! ', 
+      url: 'https://v0-17.quasar-framework.org/images/quasar-logo-big.png',
+      href: 'https://quasar.dev'
+      }
     ])
 
     return {

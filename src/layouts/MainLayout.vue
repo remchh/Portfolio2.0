@@ -191,23 +191,24 @@
 <script>
 import { ref } from 'vue'
 import axios from 'axios'
+import { useQuasar } from 'quasar'
 
 export default {
 
   setup () {
     const leftDrawerOpen = ref(false)
-
+    const $q = useQuasar()
     const search = ref('')
     const weatherData = ref(null)
-    const lat = ref(null)
-    const lon = ref(null)
     const apiKey = ref('52e8e4553c2d6e62aea2c8e174025ad7')
     const baseUrl = ref('https://api.openweathermap.org/data/2.5/weather')
     const getWeatherBySearch = () => {
+      $q.loading.show()
       axios(`${baseUrl.value}?q=${ search.value }&appid=${apiKey.value}&units=metric`)
       .then(response => {
         weatherData.value = response.data
         search.value = ''
+        $q.loading.hide()
       })
     }
 

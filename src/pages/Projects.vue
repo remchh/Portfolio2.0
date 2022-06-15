@@ -24,7 +24,7 @@
           <q-card-actions>
               <q-btn 
               flat color="primary" 
-              label="CHECK OUT"
+              label="CHECK IT OUT"
               :href="project.href"
               target="_blank"
               />

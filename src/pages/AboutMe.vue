@@ -18,11 +18,20 @@
         </q-img>
       </div>
       <div class="col-12 col-md-6 text-body1  ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta veritatis, enim voluptates ducimus nobis earum, obcaecati similique nisi adipisci qui sed praesentium, illum in asperiores eligendi vitae. Corporis, quidem?
-        <br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque iste itaque ab aspernatur laboriosam. Illum possimus ipsa aliquam dolorum doloremque qui quae doloribus sequi harum at iste accusamus, nemo obcaecati.
-         <br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque iste itaque ab aspernatur laboriosam. Illum possimus ipsa aliquam dolorum doloremque qui quae doloribus sequi harum at iste accusamus, nemo obcaecati.
+        <p>
+          Hello there! I'm Rafael and as a professional I'm a telecommunications engineer focuses in networking field, I've been working as a data center support engineer the last 4 years. 
+        </p> 
+        <p>
+          During pandemic, I started learning web programing through freecodecamp where I learned the basics of html/css, then I moved to some javascript courses, and lastly learning Vue js as a web application framework.
+        </p>
+        
+         <p>
+          I have made some projects that you can check on my github profile, my main goal is to create web applications that involve latest technologies such as firebase, apis and finally learn how to develop machine learning applications that can help the world. 
+         </p>
+         <p>
+           And yes, that picture it's me in a place an hour from where I live.
+         </p>
+
       </div>
     </div>
 
