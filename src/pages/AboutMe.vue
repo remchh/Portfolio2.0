@@ -4,7 +4,7 @@
     <div class="q-pa-md text-center text-h4 text-grey-9">
       About Me
     </div>
-    <div class="row q-pa-md flex-center q-col-gutter-md">
+    <div class="row q-pa-lg flex-center q-col-gutter-md">
       <div class="col-12 col-md-6 ">
         <q-img
           :ratio="1"

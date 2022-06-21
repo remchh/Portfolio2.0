@@ -7,7 +7,7 @@
       <div 
           v-for="(skill, index) in skills"
           :key="skill.id"
-          class="q-pa-md col-12 col-md-auto flex flex-center"
+          class="q-pa-lg col-12 col-md-auto flex flex-center"
       >
         <q-card
           class="my-card"
@@ -18,7 +18,7 @@
           <q-card-section horizontal>
               <q-card-section class="q-pt-xs col">
               <div class="text-h5 q-mt-sm q-mb-xs ">{{ skill.title }}</div>
-              <div class="text-caption text-grey">
+              <div class="text-subtitle2 text-weight-light text-grey">
                 {{ skill.lorem }}
               </div>
               </q-card-section>

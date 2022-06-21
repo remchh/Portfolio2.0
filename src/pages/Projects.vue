@@ -16,7 +16,7 @@
 
           <q-card-section>
               <div class="text-h5 q-mt-sm q-mb-xs">{{project.title}}</div>
-              <div class="text-caption text-grey">
+              <div class="text-subtitle2 text-weight-light text-grey">
                 {{project.lorem}}
               </div>
           </q-card-section>
