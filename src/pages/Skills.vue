@@ -3,7 +3,7 @@
     <div class="q-pa-md text-center text-h4 text-grey-9">
       Skills
     </div>
-    <div class="row">
+    <div class="row justify-around">
       <div 
           v-for="(skill, index) in skills"
           :key="skill.id"
@@ -18,7 +18,7 @@
           <q-card-section horizontal>
               <q-card-section class="q-pt-xs col">
               <div class="text-h5 q-mt-sm q-mb-xs ">{{ skill.title }}</div>
-              <div class="text-subtitle2 text-weight-light text-grey">
+              <div class="text-subtitle2 text-weight-light text-grey-4">
                 {{ skill.lorem }}
               </div>
               </q-card-section>
@@ -76,7 +76,7 @@ export default {
       },
 
       {id: 2, title: 'Firebase', 
-      lorem: 'One of the last technologies I have learn or at least learned the basics to implement as a backend for quick and scalable projects.', 
+      lorem: 'One of the last technologies I have learned or at least learned the basics to use as a quickly and easy to implement backend for my projects.', 
       url: 'https://www.shareicon.net/data/256x256/2016/07/08/117548_google_512x512.png',
       href: 'https://www.firebase.com'
       },

@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated style="height: 150px">
+    <q-header style="height: 150px">
       <q-toolbar>
         <q-btn
           flat
@@ -68,7 +68,7 @@
         v-model="leftDrawerOpen"
         show-if-above
         :width="200"
-        :breakpoint="400"
+        :breakpoint="700"
       >
         <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
           <q-list padding>
@@ -223,6 +223,11 @@ export default {
     }
   }
 }
+
+//CHATBOT
+//DARKMODE
+//AVATAR
+
 </script>
 
 <style lang="sass" scoped>
