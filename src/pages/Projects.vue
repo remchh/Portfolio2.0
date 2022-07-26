@@ -1,22 +1,29 @@
 <template>
   <q-page >
-    <div class="q-pa-md text-center text-h4 text-grey-9">
-      Projects
-    </div>
+    <transition
+      appear
+      enter-active-class='animated bounceInLeft slow'
+      leave-active-class='animated fadeOut slow'
+    >
+      <div class="q-pa-md text-center text-h4 text-grey-9">
+        Projects
+      </div>
+    </transition>
     <div class="row justify-around">
       <div
         v-for="(project, index) in projects"
         class="q-pa-lg col-12 col-md-auto flex flex-center" 
         >
+
         <q-card class="my-card" flat bordered>
           <q-img
+              height="261px"
               loading
               :src="project.pic"
           />
-
           <q-card-section>
-              <div class="text-h5 q-mt-sm q-mb-xs">{{project.title}}</div>
-              <div class="text-subtitle2 text-weight-light text-grey-8">
+              <div class="text-h5 q-mt-sm q-mb-xs" key="text">{{project.title}}</div>
+              <div class="text-subtitle2 text-weight-light text-grey-9">
                 {{project.lorem}}
               </div>
           </q-card-section>
@@ -44,7 +51,7 @@
           <q-slide-transition>
               <div v-show="project.expanded">
               <q-separator />
-              <q-card-section class="text-subitle2">
+              <q-card-section class="text-body1">
                   {{ project.lorem1 }}
               </q-card-section>
               </div>

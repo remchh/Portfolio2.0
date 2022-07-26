@@ -1,8 +1,14 @@
 <template>
   <q-page >
-    <div class="q-pa-md text-center text-h4 text-grey-9">
-      Skills
-    </div>
+    <transition
+      appear
+      enter-active-class='animated bounceInLeft slow'
+      leave-active-class='animated fadeOut slow'
+    >
+      <div class="q-pa-md text-center text-h4 text-grey-9">
+        Skills
+      </div>
+    </transition>
     <div class="row justify-around">
       <div 
           v-for="(skill, index) in skills"
@@ -18,12 +24,12 @@
           <q-card-section horizontal>
               <q-card-section class="q-pt-xs col">
               <div class="text-h5 q-mt-sm q-mb-xs ">{{ skill.title }}</div>
-              <div class="text-subtitle2 text-weight-light text-grey-4">
+              <div class="text-subtitle1 text-weight-light text-grey-4">
                 {{ skill.lorem }}
               </div>
               </q-card-section>
 
-              <q-card-section class="col flex justify-end">
+              <q-card-section class="col flex justify-end flex-center">
             <!-- <q-img
                   :src="'~assets/' + skill.pic"
                   width="150px"
@@ -47,7 +53,7 @@
               :href="skill.href"
               target="_blank"
               flat 
-              color="primary">
+              color="secondary">
               See more
               </q-btn>
           </q-card-actions>
