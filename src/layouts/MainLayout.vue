@@ -40,7 +40,7 @@
       <div v-if="!weatherData" class="col q-pt-xl q-px-md">
         <q-input
           v-model="search"
-          placeholder="Enter your city location to get the current weather"
+          placeholder="Enter your city location to get the weather"
           @keyup.enter="getWeatherBySearch"
           dark
           borderless

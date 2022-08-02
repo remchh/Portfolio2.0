@@ -75,9 +75,12 @@ export default {
       {id: 1, title: 'Football Stadium App', 
       lorem: 'A web app using RESTful API', lorem1: 'This project was made with Quasar V2, and rapidAPI which help me to get a better understanding of how to work with API and JS. In this case I deployed it trough Heroku CLI.  ', 
       pic: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2805&q=80', expanded: false, href: 'https://football-stadium-app.herokuapp.com/#/'},
-      {id: 2, title: 'New Project', 
-      lorem: 'coming soon', lorem1: 'An increduble project coming soon', 
-      pic:'https://cdn.quasar.dev/img/parallax2.jpg', expanded: false}
+      {id: 2, title: 'ToDo App', 
+      lorem: 'A classic todo app', lorem1: 'An app conected with firebase as a backend, using firestore and realtime updates across devices and operating systems.', 
+      pic:'https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80', expanded: false, href: 'https://remchh.github.io/Todo-Quasar/'},
+      {id: 3, title: 'New Project', 
+      lorem: 'coming soon', lorem1: 'An incredible project coming soon', 
+      pic:'https://cdn.quasar.dev/img/parallax2.jpg', expanded: false},
     ])
     return {
       projects
