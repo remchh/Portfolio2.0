@@ -71,14 +71,14 @@ export default {
     const skills = ref([
       {id: 0, title: 'HTML/CSS', 
       lorem: 'I got my first web certification from freecodecamp, learning html, css grid and flexbox, responsive web design.', 
-      url: 'http://www.augermiquel.com/wp-content/uploads/2019/10/html-css.png',
+      url: 'https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png',
       href: 'https://freecodecamp.com'
       },
 
       {id: 1, title: 'Vue JS', 
-      lorem: 'After learning the basics of javascript, I chose Vuejs framework as the way to go, I took some courses from vuemastery and vueschool to learn from basic to intermidiate level skills such as components, vue-router, composition api and pinia.', 
+      lorem: 'After learning the basics of javascript, I chose Vuejs framework as the way to go, I took some courses from vuemastery and vueschool to learn from basic to intermidiate level skills such as components, vue-router, composition api and pinia. Currently studying for the Certified Vue.js Developer', 
       url: 'https://cdn.iconscout.com/icon/free/png-256/vue-282497.png',
-      href: 'https://vuejs.org'
+      href: 'https://certificates.dev/'
       },
 
       {id: 2, title: 'Firebase', 
